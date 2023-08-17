@@ -1,0 +1,294 @@
+/*
+    Theme Name: custom
+    Text Domain: custom
+    Version: 1.2
+    Description: Lorem ipsum
+    Author: Igor Klancisar
+*/
+
+/*Fonts*/
+@font-face {
+    font-family: 'Mada';
+    src: url('assets/fonts/Mada-SemiBold.woff2') format('woff2'), url('assets/fonts/Mada-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mada';
+    src: url('assets/fonts/Mada-Medium.woff2') format('woff2'), url('assets/fonts/Mada-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mada';
+    src: url('assets/fonts/Mada-Regular.woff2') format('woff2'), url('assets/fonts/Mada-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Main */
+
+body {
+    font-family: 'Mada';
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    text-align: justify;
+    font-style: normal;
+    color: #000;
+    background-color: #F9F9F9;
+}
+section{
+    padding:0px 0 40px;
+}
+section:first-child{
+    padding-top:97px;
+}
+section:last-child {
+    padding-bottom: 97px;
+}
+
+.img-center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* Bootstrap changes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1110px;
+    }
+}
+
+/* Headings */
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+    position: relative;
+    margin-bottom:31px;
+}
+h1:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:106px;
+    height:6px;
+    border-radius: 107.619px;
+    background: #FFD700;
+    content:'';
+}
+
+h2 {
+    font-family: Mada;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color:#000;
+    margin-bottom:18px;
+}
+
+h3 {
+    font-family: Mada;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+    font-family: Mada;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:#000;
+}
+
+p.article-top {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Buttons*/
+.promo{
+    padding-bottom:100px;
+}
+.btn-promo {
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #78849E;
+    color: #78849E;
+    background-color:#fff;
+    width:100%;
+
+}
+.btn-promo:hover {
+    background-color: #78849E;
+    color: #fff;
+    box-shadow: 0px 3px 2px rgba(0,0,0,.3);
+    border: 1px solid #78849E;
+    }
+.btn-promo:active {
+    background-color: #78849E !important;
+    color: #fff !important;
+    box-shadow: 0px 3px 2px rgba(0,0,0,.2) inset;
+    border: 1px solid #78849E;
+}
+
+.btn-primary {
+    border-radius: 100px;
+    border: 1px solid #4A90E2;
+    background: #FFF;
+    color: #4A90E2;
+    text-align: center;
+    font-family: Mada;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display:block;
+    padding:12px 38px;
+}
+    .btn-primary:focus {
+        border-radius: 100px;
+        border: 1px solid #4A90E2;
+        background: #4A90E2;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        color: #FFF;
+        font-family: Mada;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+.btn-center {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Article top */
+.article-top img{
+    margin-bottom:23px;
+}
+
+/* Promo section*/
+
+section.promo .container {
+    background-color: #fff;
+    position: relative;
+    padding: 0px 30px;
+    fill: #FFF;
+    /*filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));*/
+    border-radius: 26px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+@media(min-width:768px) {
+    section.promo .container {
+        padding: 0px 85px;
+    }
+}
+section.promo .container:before {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-color: #f9f9f9;
+    box-shadow: 4px 0 7px -3px rgba(0,0,0,.25);
+}
+section.promo .container:after {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-color: #f9f9f9;
+    box-shadow: -4px 0 7px -3px rgba(0,0,0,.25);
+}
+section.promo .container .row {
+    align-items: center;
+}
+section.promo .container .col-12 {
+    padding-top: 38px;
+    padding-bottom: 37px;
+}
+    section.promo .container .col-md-7 {
+        border-bottom: 2px dashed #edeef4;
+    }
+@media(min-width:768px) {
+    section.promo .container .col-md-7 {
+        border-right: 2px dashed #edeef4;
+        border-bottom:0;
+    }
+}
+
+/* Brands section */
+section.brands{
+    padding-bottom:72px;
+}
+section.brands .container h2 {
+    margin-bottom: 24px;
+}
+
+section.brands .container .brand-logos {
+    padding: 10px 20px;
+    gap: 110px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+section.brands .container .brand-logo {
+    max-width: 100%;
+    max-height: 36px;
+}
+
+/* Section with the title on top */
+.title-on-top h2{
+    margin-bottom:27px;
+}
+/* Section with images with individual texts and buttons */
+.box-frame {
+    display: flex;
+    justify-content: space-between
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 264.596px;
+}
+.box .img-frame{
+    background-color:#fff;
+    padding:13px 18px;
+    width:100%;
+}
+
+.box p{
+    margin:0;
+}
