@@ -2,10 +2,10 @@
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-6">
                     <h3>A section with a promo code, text and specific local message</h3>
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
                     <button class="btn btn-promo">RUBIXWELCOME23</button>
                 </div>
             </div>
@@ -13,7 +13,7 @@
     </section>
     <!-- // Promo-->
     <!-- Image + text section-->
-    <section>
+    <section class="image-text">
         <div class="container">
             <h2>A section with an image, text and featured products</h2>
             <img src="<?php echo get_template_directory_uri().'/assets/images/Rectangle 1283.jpg' ?>" alt="" class="img-fluid" />
